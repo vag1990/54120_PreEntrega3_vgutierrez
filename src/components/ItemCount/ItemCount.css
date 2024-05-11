@@ -1,0 +1,11 @@
+.contenedorItemCount {
+    border: solid 1px black;
+    background-color: green;
+
+}
+
+.contenedorBotonCounter {
+    border: black solid 1px;
+    font-family: "Roboto";
+    font-weight: bold;
+}
