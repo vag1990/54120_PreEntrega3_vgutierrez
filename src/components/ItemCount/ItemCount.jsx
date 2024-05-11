@@ -1,4 +1,4 @@
-import "ItemCount.css";
+import "./ItemCount.css";
 
 export default function ItemCount({ stock, count, increment, decrement }) {
     return (

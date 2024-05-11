@@ -1,35 +1,33 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "./App.css";
+import Layout from "./components/Layout/Layout";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
+import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer";
+import CartProvider from "./contexts/CartProvider";
+import CartContainer from "./components/CartContainer/CartContainer";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Viteh and React logos to learn more
-      </p>
-    </>
-  )
+    <BrowserRouter>
+      <CartProvider>
+        <Layout>
+          <Routes>
+            <Route path="/" element={<ItemListContainer />} />
+            <Route
+              path="/category/:categoryName"
+              element={<ItemListContainer />}
+            />
+            <Route
+              path="/product/:productId"
+              element={<ItemDetailContainer />}
+            />
+            <Route path="/cart" element={<CartContainer />} />
+            <Route path="/checkout" element={<h1>Proximamente...</h1>} />
+          </Routes>
+        </Layout>
+      </CartProvider>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;

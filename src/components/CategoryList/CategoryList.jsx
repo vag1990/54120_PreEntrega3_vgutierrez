@@ -1,4 +1,4 @@
-import "CategoryList.css"
+import "./CategoryList.css"
 import { NavLink } from "react-router-dom";
 
 const MIS_RUTAS = [
