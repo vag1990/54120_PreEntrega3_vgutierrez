@@ -1,7 +1,7 @@
 .contenedorFooter {
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
+    display: inline-block;
+    text-align: end;
+    margin-top: 100px;
 }
 
 .parrafoFooter {
@@ -9,4 +9,7 @@
     font-size: 1rem;
     font-family: "Roboto";
     font-weight: bold;
+   
+   
+    
 }

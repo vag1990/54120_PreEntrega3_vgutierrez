@@ -3,20 +3,24 @@ import { NavLink } from "react-router-dom";
 
 const MIS_RUTAS = [
   {
-    path: "/category/bolsos",
-    label: "Bolsos",
+    path: "/",
+    label: "INICIO",
   },
   {
-    path: "/category/remeras",
-    label: "Remeras",
+    path: "/products",
+    label: "PRODUCTOS",
   },
   {
-    path: "/category/camperas",
-    label: "Camperas",
+    path: "/mesas",
+    label: "MESAS",
   },
   {
-    path: "/category/joyas",
-    label: "Joyas",
+    path: "/revestimiento",
+    label: "REVESTIMIENTO",
+  },
+  {
+    path: "/contacto",
+    label: "CONTACTO",
   },
 ];
 
