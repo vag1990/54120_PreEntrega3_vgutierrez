@@ -1,38 +1,42 @@
-import "./CategoryList.css"
+import "./CategoryList.css";
 import { NavLink } from "react-router-dom";
 
 const MIS_RUTAS = [
-    {
-        path: "/inicio",
-        label: "inicio",
-    },
-    {
-        path: "/productos",
-        label: "productos",
-    },
-    {
-        path: "/blends",
-        label: "blends",
-    },
-    {
-        path: "/contacto",
-        label: "contacto",
-    },
-
+  {
+    path: "/category/bolsos",
+    label: "Bolsos",
+  },
+  {
+    path: "/category/remeras",
+    label: "Remeras",
+  },
+  {
+    path: "/category/camperas",
+    label: "Camperas",
+  },
+  {
+    path: "/category/joyas",
+    label: "Joyas",
+  },
 ];
 
-export default function CategoryList() {
-    return (
-        <nav>
-            <ul className="categoryList">
-                {MIS_RUTAS.map((ruta) => (
-                    <li>
-                        <NavLink className={({ isActive }) => (isActive ? "activeLink" : "")}>
-                            {ruta.label}
-                            </NavLink>
-                    </li>
-                ))}
-            </ul>
-        </nav>
-    )
+function CategoryList() {
+  return (
+    <nav>
+      <ul className="category--list">
+        {MIS_RUTAS.map((ruta) => (
+          <li key={ruta.path}>
+            <NavLink
+              className={({ isActive }) => (isActive ? "active-link" : "")}
+              to={ruta.path}
+            >
+              {ruta.label}
+            </NavLink>
+          </li>
+        ))}
+      </ul>
+    </nav>
+  );
 }
+
+export default CategoryList;

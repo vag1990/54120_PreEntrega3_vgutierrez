@@ -1,4 +1,4 @@
-.categoryList{
+.category--list{
     display: flex;
     flex-wrap: wrap;
     list-style: none;
@@ -6,28 +6,21 @@
     padding-right: 20px;
 }
 
-.categoryList li{
-    background-color: white;
+.category--list li{
+    background-color: #f9f9f9;
     padding: 10px;
     border-radius: 5px;
     cursor: pointer;
 }
 
-.categoryList li:hover{
-    border: black 1px solid;
+.category--list li:hover{
+    background-color: #e1e1e1;
 }
 
-.categoryList li a{
+.category--list li a{
     text-decoration: none;
-    color: black;
-    font-weight: bold;
-    font-size: 1rem;
-    font-family: "Roboto";
+    color: tomato;
+    font-weight: 500;
 
 }
 
-.active-link {
-    font-size: 1.5rem;
-    font-weight: bold;
-    font-family: "Roboto";
-}
