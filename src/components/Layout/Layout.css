@@ -5,6 +5,7 @@
     flex-direction: column;
     min-height: 100vh;
     background-color: white;
+    text-decoration: none;
 
 }
 
@@ -13,6 +14,9 @@
     justify-content: space-between;
     background-color: white;
     
+  }
+.contenedorHeaderLayout a {
+    text-decoration: none;
   }
 
 .contenedorMain {

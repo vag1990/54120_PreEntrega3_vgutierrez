@@ -20,23 +20,23 @@ export default function Home() {
 
 
   return (
-    <div>
+    <div className="contenedorFormContacto">
 
       <form action="#" method="post">
 
-<label htmlFor="nombre">Nombre</label>
-<input type="text" id="nombre" />
-<label htmlFor="apellido">Apellido</label>
-<input type="text" id="apellido" />
-<label htmlFor="correo">Correo</label>
-<input type="text" id="correo" />
-<label htmlFor="mensaje">Mensaje</label>
-<textarea name="mensaje" id="mensaje" placeholder="Dejanos tu mensaje!"></textarea>
+        <div className="contenedorItemForm"><label htmlFor="nombre">Nombre</label>
+        <input className="contenedorItemForm" type="text" id="nombre" /></div>
+        <div className="contenedorItemForm"><label htmlFor="apellido">Apellido</label>
+        <input className="contenedorItemForm" type="text" id="apellido" /></div>
+        <div className="contenedorItemForm"><label htmlFor="correo">Correo</label>
+        <input className="contenedorItemForm" type="text" id="correo" /></div>
+        <div className="contenedorItemForm"><label htmlFor="mensaje">Mensaje</label>
+        <textarea className="contenedorItemAreaForm" name="mensaje" id="mensaje" placeholder="Dejanos tu mensaje!"></textarea></div>
 
-<button type="button">Enviar</button>
+        <button className="botonEnviarContacto" type="button">Enviar</button>
 
       </form>
-       
+
 
     </div>
   );

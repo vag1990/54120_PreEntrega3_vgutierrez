@@ -8,7 +8,7 @@ export default function NavBar() {
   const { cart } = useContext(CartContext);
 
   return (
-    <div className="flex items-center">
+    <div className="navBar">
       <CategoryList />
       <div className={`${cart.length === 0 ? "hidden" : ""}`}>
         <CartWidget />
