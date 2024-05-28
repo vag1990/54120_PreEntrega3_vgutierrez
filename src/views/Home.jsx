@@ -22,7 +22,7 @@ export default function Home() {
   return (
     <div>
 
-      <img style={{width:"1600px", height:"auto"}} className="imgHome" src="./w1.jpg" alt="" />
+      <img style={{width:"1400px", height:"auto"}} className="imgHome" src="./w1.jpg" alt="" />
        
 
     </div>

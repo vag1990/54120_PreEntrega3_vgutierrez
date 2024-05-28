@@ -4,8 +4,19 @@
 
 }
 
-.contenedorBotonCounter {
-    border: black solid 1px;
+.item--count-button {
+    border: black solid 2px;
+    border-radius: 20px;
+    background-color: rgb(153, 190, 178);
     font-family: "Roboto";
     font-weight: bold;
+    font-size: 1.5rem;
+    width: 40px;
+    height: 40px;
+}
+
+.item--count{
+    font-family: "Roboto";
+    font-weight: bold;
+    margin: 10px;
 }

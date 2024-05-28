@@ -5,7 +5,7 @@ export default function Item({ item }) {
   return (
     <div className="item__container">
       <div className="item--img__container">
-        <img className="item--img" src={item.image} alt={item.title} />
+        <img className="item--img__" src={item.image} alt={item.title} />
       </div>
       <Link to={`/product/${item.id}`}>
         <h2 className="item--title">{item.title}</h2>

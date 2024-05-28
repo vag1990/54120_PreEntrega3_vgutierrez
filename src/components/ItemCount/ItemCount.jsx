@@ -11,7 +11,7 @@ export default function ItemCount({ stock, count, increment, decrement }) {
         >
           -
         </button>
-        <span className="item--count-button">{count}</span>
+        <span className="item--count">{count}</span>
         <button
           className="item--count-button bg-slate-200 rounded-md"
           onClick={increment}
