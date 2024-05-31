@@ -36,6 +36,11 @@ export default function Home() {
         <button className="botonEnviarContacto" type="button">Enviar</button>
 
       </form>
+      <div>
+        <img src="././public/foto5.jpg" alt="" className="imgContacto" />
+        </div>
+
+      
 
 
     </div>

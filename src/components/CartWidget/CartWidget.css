@@ -1,6 +1,9 @@
 .cart--container > span{
     color: white;
     padding: 5px;
+    margin-top: 200px;
     background-color: tomato;
-     border-radius: 50%;
+    font-family: "Roboto";
+    font-weight: bold;
+    border-radius: 25px;
  }

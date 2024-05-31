@@ -1,15 +1,27 @@
 .imgCartItem {
-    max-width: 200px;
+   width: 200px;
     height: 200px;
 }
 .contenedorCartItem {
     border-bottom: black solid 2px;
     font-family: "Roboto";
+    font-weight: bold;
     width: 800px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
 }
 .contenedorCart {
     display: flex;
+}
+
+.counterCart {
+    font-family: "Roboto";
+    
+}
+
+.buttonCounterCart {
+    font-family: "Roboto";
+    margin: 10px;
 }

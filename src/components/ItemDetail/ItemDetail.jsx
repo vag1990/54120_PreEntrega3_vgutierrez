@@ -4,6 +4,7 @@ import ItemCount from "../ItemCount/ItemCount";
 import "./ItemDetail.css";
 import CartContext from "../../contexts/CartContext";
 
+
 export default function ItemDetail({ item }) {
   const { count, increment, decrement, reset } = useCount(0);
   const { addToCart } = useContext(CartContext);

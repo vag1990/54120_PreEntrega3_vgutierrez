@@ -1,0 +1,9 @@
+.cartIcon {
+    margin-top: 25px;
+}
+
+.cartIcon:hover {
+    border: 2px green solid;
+    border-radius: 25px;
+    
+}

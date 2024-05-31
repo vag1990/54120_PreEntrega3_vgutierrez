@@ -22,16 +22,16 @@ export default function CartItem({ item }) {
         <div><p>Cantidad: {item.quantity}</p></div>
         <div><p>Precio: ${item.product.price}</p>
         </div>
-        <div className="flex gap-3">
+        <div className="counterCart flex gap-5">
           <button
-            className="px-1 rounded-full bg-slate-300"
+            className="buttonCounterCart px-1 rounded-full bg-slate-300"
             onClick={() => removeFromCart(item.product.id, 1)}
           >
             -
           </button>
           <span>{item.quantity}</span>
           <button
-            className="px-1 rounded-full bg-slate-300"
+            className="buttonCounterCart px-1 rounded-full bg-slate-300"
             onClick={() => addToCart(item.product, 1)}
           >
             +
