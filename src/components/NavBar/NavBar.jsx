@@ -7,11 +7,14 @@ import CartContext from "../../contexts/CartContext";
 export default function NavBar() {
   const { cart } = useContext(CartContext);
 
+
+
+
   return (
     <div className="navBar">
       <CategoryList />
       <div className={`${cart.length === 0 ? "hidden" : ""}`}>
-        <CartWidget />
+        <CartWidget  />
       </div>
     </div>
   );

@@ -9,3 +9,7 @@
 .navBar {
     display: flex;
 }
+
+.hidden {
+    display: none;
+}

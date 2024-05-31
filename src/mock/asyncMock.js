@@ -6,7 +6,7 @@ const products = [
     description:
       "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
     image: "./foto5.jpg",
-    stock: 5,
+    stock: 12,
     category: "mesas",
   },
   {
@@ -17,7 +17,7 @@ const products = [
       "Slim-fitting style, contrast raglan long sleeve, three-button henley placket, light weight & soft fabric for breathable and comfortable wearing. And Solid stitched shirts with round neck made for durability and a great fit for casual fashion wear and diehard baseball fans. ",
     image:
       "./foto3.jpg",
-    stock: 2,
+    stock: 12,
     category: "mesas",
   },
   {
@@ -27,7 +27,7 @@ const products = [
     description:
       "great outerwear jackets for Spring/Autumn/Winter, suitable for many occasions, such as working, hiking, camping, mountain/rock climbing, cycling, traveling or other outdoors. Good gift choice for you or your family member. ",
     image: "./foto2.jpg",
-    stock: 4,
+    stock: 12,
     category: "mesas",
   },
   {
@@ -37,7 +37,7 @@ const products = [
     description:
       "The color could be slightly different between on the screen and in practice. / Please note that body builds vary by person, therefore, detailed size information should be reviewed below on the product description.",
     image: "./foto4.jpg",
-    stock: 0,
+    stock: 12,
     category: "mesas",
   },
   {
@@ -48,7 +48,7 @@ const products = [
     description:
       "From our Legends Collection, the Naga was inspired by the mythical water dragon that protects the ocean's pearl. Wear facing inward to be bestowed with love and abundance, or outward for protection.",
     image: "./muestras-terrazzo.webp",
-    stock: 1,
+    stock: 10,
     category: "revestimiento",
   },
   {
@@ -59,7 +59,7 @@ const products = [
     description:
       "From our Legends Collection, the Naga was inspired by the mythical water dragon that protects the ocean's pearl. Wear facing inward to be bestowed with love and abundance, or outward for protection.",
     image: "./revest1020.jpg",
-    stock: 1,
+    stock: 10,
     category: "revestimiento",
   },
 ];

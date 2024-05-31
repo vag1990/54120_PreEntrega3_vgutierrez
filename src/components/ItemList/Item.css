@@ -39,8 +39,13 @@ a {
     min-height: 50px;
     max-height: 50px;
     overflow: auto;
-    
   }
+.item--title:hover {
+text-decoration: underline;
+}
+
+
+
   
   .item--description {
     color: gray;
