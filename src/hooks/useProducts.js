@@ -1,5 +1,11 @@
 import { useEffect, useState } from "react";
-import { getProducts, getProductsByCategory } from "../mock/asyncMock";
+import {
+  collection,
+  getDocs,
+  getFirestore,
+  query,
+  where,
+} from "firebase/firestore";
 
 export default function useProducts(categoryName) {
   const [products, setProducts] = useState([]);
@@ -7,13 +13,34 @@ export default function useProducts(categoryName) {
 
   useEffect(() => {
     setIsLoading(true);
+    const db = getFirestore();
+    const productsCollection = collection(db, "products");
     if (categoryName) {
-      getProductsByCategory(categoryName)
-        .then((data) => setProducts(data))
+      const productsQuery = query(
+        productsCollection,
+        where("categoryName", "==", categoryName)
+      );
+
+      getDocs(productsQuery)
+        .then((snapshot) => {
+          setProducts(
+            snapshot.docs.map((doc) => ({
+              id: doc.id,
+              ...doc.data(),
+            }))
+          );
+        })
         .finally(() => setIsLoading(false));
     } else {
-      getProducts()
-        .then((data) => setProducts(data))
+      getDocs(productsCollection)
+        .then((snapshot) => {
+          setProducts(
+            snapshot.docs.map((doc) => ({
+              id: doc.id,
+              ...doc.data(),
+            }))
+          );
+        })
         .finally(() => setIsLoading(false));
     }
   }, [categoryName]);

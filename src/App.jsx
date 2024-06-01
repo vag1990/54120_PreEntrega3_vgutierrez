@@ -1,12 +1,14 @@
 import "./App.css";
+import "./App.css";
 import Layout from "./components/Layout/Layout";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
 import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer";
 import CartProvider from "./contexts/CartProvider";
 import CartContainer from "./components/CartContainer/CartContainer";
-import Home from "../src/views/Home";
-import Contacto from "../src/views/Contacto";
+import CheckoutContainer from "./components/CheckoutContainer/CheckoutContainer";
+import Home from "./views/Home";
+import Contacto from "./views/Contacto"
 
 function App() {
   return (
@@ -31,7 +33,8 @@ function App() {
               element={<Contacto />}
             />
             <Route path="/cart" element={<CartContainer />} />
-            <Route path="/checkout" element={<h1>Proximamente...</h1>} />
+            <Route path="/checkout" element={<CheckoutContainer />} />
+            
           </Routes>
         </Layout>
       </CartProvider>
