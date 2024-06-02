@@ -22,3 +22,13 @@
     align-items: center;
    
 }
+
+.formCart {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    font-family: "Roboto";
+    font-weight: bold;
+
+
+}

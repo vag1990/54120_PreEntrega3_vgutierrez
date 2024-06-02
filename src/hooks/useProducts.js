@@ -7,7 +7,7 @@ import {
   where,
 } from "firebase/firestore";
 
-export default function useProducts(categoryName) {
+export default function useProducts(category) {
   const [products, setProducts] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
 
@@ -15,10 +15,10 @@ export default function useProducts(categoryName) {
     setIsLoading(true);
     const db = getFirestore();
     const productsCollection = collection(db, "products");
-    if (categoryName) {
+    if (category) {
       const productsQuery = query(
         productsCollection,
-        where("categoryName", "==", categoryName)
+        where("category", "==", category)
       );
 
       getDocs(productsQuery)
@@ -43,7 +43,7 @@ export default function useProducts(categoryName) {
         })
         .finally(() => setIsLoading(false));
     }
-  }, [categoryName]);
+  }, [category]);
 
   return { products, isLoading };
 }
