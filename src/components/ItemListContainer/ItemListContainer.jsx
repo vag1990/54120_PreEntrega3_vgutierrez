@@ -1,11 +1,11 @@
 import ItemList from "../ItemList/ItemList";
-import useProducts from "../../hooks/useProducts";
+import useProductsFirebase from "../../hooks/useProducts";
 import { useParams } from "react-router-dom";
 
 function ItemListContainer() {
   const { categoryName } = useParams();
 
-  const { isLoading, products } = useProducts(categoryName);
+  const { isLoading, products } = useProductsFirebase(categoryName);
 
   if (isLoading) return <h1>Cargando...</h1>;
 
